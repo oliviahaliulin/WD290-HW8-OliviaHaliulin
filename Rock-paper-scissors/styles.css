@@ -1,18 +1,22 @@
+@font-face {
+    font-family: geist;
+    src: url(../fonts/GeistMono-VariableFont_wght.ttf) format("truetype");
+}
 
 :root {
-    --orange: #0e0023;
-    --dark: #8d052b;
+    --orange: #f7ac69;
+    --dark: #333;
     --light: #feeed5;
-    --red: #ff6a6a;
-    --yellow: #ffe46a;
-    --green:#92ff8d;
+    --red: #f46969;
+    --yellow: #f4e369;
+    --green:#69f4a2;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace;
+    font-family: "geist", monospace;
     text-transform: uppercase;
     color: var(--dark)
 }

@@ -6,7 +6,7 @@ const resultEl = document.querySelector("#result");
 const playerEl = document.querySelector("#playerChoice");
 const computerEl = document.querySelector("#computerChoice");
 const buttons = document.querySelectorAll(".choice");
-const gamesEl = document.querySelector("#gamesPlayed");
+const gamesEl = document.querySelector("#games");
 const playerWinsEl = document.querySelector("#playerWins");
 const computerWinsEl = document.querySelector("#computerWins");
 const tiesEl = document.querySelector("#ties");
@@ -108,14 +108,14 @@ buttons.forEach(function (btn) {
     const player = btn.dataset.choice;
     const computer = getComputerChoice();
     const outcome = getWinner(player, computer);
-    
-    updateScore(outcome); 
+     
 
     console.log("player:", player);
     console.log("computer:", computer);
     console.log("outcome:", outcome);
     console.log("-------------");
 
+    updateScore(outcome);
     render(player, computer, outcome, btn);
   });
 });
